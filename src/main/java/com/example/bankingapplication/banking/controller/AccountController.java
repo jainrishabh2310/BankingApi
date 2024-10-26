@@ -61,7 +61,7 @@ public class AccountController {
 
     @GetMapping("/test")
     public String test(){
-        return "test";
+        return "test.html";
     }
 
 
