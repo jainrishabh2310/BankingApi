@@ -22,6 +22,7 @@ public class AccountServiceImpl implements AccountService {
 
    // CREATE ACCOUNT REST API
     @Override
+    @Transactional
     public AccountDto creteAccount(AccountDto accountDto) {
         Account account= AccountMapper.maptoAccount(accountDto);
         Account saved=accountRepo.save(account);
