@@ -59,5 +59,10 @@ public class AccountController {
         return ResponseEntity.ok("account is deleetd");
     }
 
+    @GetMapping("/test")
+    public String test(){
+        return "test";
+    }
+
 
 }
