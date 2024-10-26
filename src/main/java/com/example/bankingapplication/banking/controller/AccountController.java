@@ -5,12 +5,13 @@ import com.example.bankingapplication.banking.entity.Account;
 import com.example.bankingapplication.banking.service.AccountService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
-@RestController
+@Controller
 @RequestMapping("/api/accounts")
 public class AccountController {
 
@@ -58,7 +59,6 @@ public class AccountController {
         accountService.deletebyid(id);
         return ResponseEntity.ok("account is deleetd");
     }
-
     @GetMapping("/test")
     public String test(){
         return "test";
