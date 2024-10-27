@@ -80,8 +80,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version> <!-- Ensure this version or later for Java 21 support -->
 				<configuration>
-					<source>11</source> <!-- Use 17 if you are compatible with Java 17, or change to 21 if needed -->
-					<target>11</target>
+<!--					<source>11</source> &lt;!&ndash; Use 17 if you are compatible with Java 17, or change to 21 if needed &ndash;&gt;-->
+<!--					<target>11</target>-->
+					<release>11</release>
 				</configuration>
 			</plugin>
 		</plugins>
